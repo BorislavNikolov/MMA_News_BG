@@ -9,9 +9,38 @@ a.navbar-brand {
 
 /* Sticky footer styles
 -------------------------------------------------- */
+* {
+    background-color: rgb(34, 34, 34) !important;
+}
+
 html {
     font-size: 14px;
+    background-color: rgb(34, 34, 34) !important;
 }
+
+#head-part {
+    background-color: rgb(27, 27, 27) !important;
+}
+
+#navigation {
+    list-style: none;
+}
+
+.navigation-link {
+    opacity: 0.7;
+}
+
+.navigation-link:hover {
+    transform: scale(1.5); 
+    cursor: pointer;
+    opacity: 1;
+    transition: all 1s;
+}
+
+#footer-part {
+    background-color: rgb(27, 27, 27) !important;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;

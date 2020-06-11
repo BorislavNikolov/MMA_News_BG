@@ -4,9 +4,9 @@ namespace MMA_News_BG.Data.Models
     using System;
     using System.Collections.Generic;
 
-    using MMA_News_BG.Data.Common.Models;
-
     using Microsoft.AspNetCore.Identity;
+
+    using MMA_News_BG.Data.Common.Models;
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
     {

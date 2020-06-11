@@ -13,6 +13,9 @@
         public string Content { get; set; }
 
         [Required]
+        public string ImageUrl { get; set; }
+
+        [Required]
         public string UserId { get; set; }
 
         public ApplicationUser User { get; set; }
