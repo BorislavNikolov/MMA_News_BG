@@ -1,0 +1,14 @@
+﻿#footer-part {
+    border-top: solid 1px;
+    border-color: gold;
+
+    position: center;
+}
+
+.footer-elements {
+    background-color: rgb(27, 27, 27) !important;
+}
+
+a {
+    color: gold;
+}
