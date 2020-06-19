@@ -30,6 +30,11 @@ html {
     opacity: 0.7;
 }
 
+.navigation-link > a {
+    color: white;
+    text-decoration: none;
+}
+
 .navigation-link:hover {
     transform: scale(1.5); 
     cursor: pointer;

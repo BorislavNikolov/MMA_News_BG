@@ -30,10 +30,6 @@
                 {
                     Name = "Bellator",
                 },
-                new Category
-                {
-                    Name = "Прогнози",
-                },
             };
 
             foreach (var category in categories)

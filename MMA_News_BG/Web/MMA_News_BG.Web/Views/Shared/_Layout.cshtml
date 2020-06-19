@@ -19,30 +19,30 @@
         <span class="mt-4 header-elements font-weight-bold">MMA News BG</span>
 
         <ul id="navigation" class="d-flex mx-auto col-6 justify-content-around p-2 my-3 font-weight-bold rounded text-white">
-            <li class="navigation-link">Home</li>
-            <li class="navigation-link">UFC</li>
-            <li class="navigation-link">News</li>
-            <li class="navigation-link">Bellator</li>
+            <li class="navigation-link"><a asp-controller="Home" asp-action="Index">Начало</a></li>
+            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName">UFC</a></li>
+            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName">Bellator</a></li>
+            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName">Любопитно</a></li>
         </ul>
 
         <a class="header-elements mt-4" asp-controller="Articles" asp-action="Create">Add Article</a>
     </header>
-    
+
     <div class="container my-2 col-10">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @this.RenderBody()
         </main>
     </div>
-    
-    <footer id="footer-part" class="py-3 d-flex justify-content-around text-muted col-10 mx-auto">
-            <span class="footer-elements">
-                &copy; @DateTime.Now.Year - @GlobalConstants.SystemName - <a class="footer-elements" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            </span>
 
-            <span class="footer-elements">
-                mmanewsbg@gmail.com
-            </span>
+    <footer id="footer-part" class="py-3 d-flex justify-content-around text-muted col-10 mx-auto">
+        <span class="footer-elements">
+            &copy; @DateTime.Now.Year - @GlobalConstants.SystemName - <a class="footer-elements" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </span>
+
+        <span class="footer-elements">
+            mmanewsbg@gmail.com
+        </span>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
