@@ -20,9 +20,9 @@
 
         <ul id="navigation" class="d-flex mx-auto col-6 justify-content-around p-2 my-3 font-weight-bold rounded text-white">
             <li class="navigation-link"><a asp-controller="Home" asp-action="Index">Начало</a></li>
-            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName">UFC</a></li>
-            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName">Bellator</a></li>
-            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName">Любопитно</a></li>
+            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName" asp-route-name="UFC">UFC</a></li>
+            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName" asp-route-name="Bellator">Bellator</a></li>
+            <li class="navigation-link"><a asp-controller="Categories" asp-action="ByName" asp-route-name="Любопитно">Любопитно</a></li>
         </ul>
 
         <a class="header-elements mt-4" asp-controller="Articles" asp-action="Create">Add Article</a>

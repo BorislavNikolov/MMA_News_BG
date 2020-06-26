@@ -17,20 +17,20 @@
             this.articlesRepository = articlesRepository;
         }
 
-        // Add image url
         public async Task<int> CreateAsync(string title, string content, int categoryId, string userId)
         {
-            var post = new Article
+            var article = new Article
             {
                 CategoryId = categoryId,
                 Content = content,
                 Title = title,
                 UserId = userId,
+                ImageUrl = "test image url",
             };
 
-            await this.articlesRepository.AddAsync(post);
+            await this.articlesRepository.AddAsync(article);
             await this.articlesRepository.SaveChangesAsync();
-            return post.Id;
+            return article.Id;
         }
 
         public IEnumerable<T> GetByCategoryId<T>(int categoryId, int? take = null, int skip = 0)

@@ -4,7 +4,10 @@
     using System.Net;
     using System.Text.RegularExpressions;
 
-    public class ArticlesInCategoryViewModel
+    using MMA_News_BG.Data.Models;
+    using MMA_News_BG.Services.Mapping;
+
+    public class ArticlesInCategoryViewModel : IMapFrom<Article>
     {
         public int Id { get; set; }
 

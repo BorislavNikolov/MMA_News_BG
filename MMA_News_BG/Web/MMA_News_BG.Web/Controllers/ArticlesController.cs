@@ -29,13 +29,13 @@
 
         public IActionResult ById(int id)
         {
-            var postViewModel = this.articlesService.GetById<ArticleViewModel>(id);
-            if (postViewModel == null)
+            var articleViewModel = this.articlesService.GetById<ArticleViewModel>(id);
+            if (articleViewModel == null)
             {
                 return this.NotFound();
             }
 
-            return this.View(postViewModel);
+            return this.View(articleViewModel);
         }
 
         [Authorize]

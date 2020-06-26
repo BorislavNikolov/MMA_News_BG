@@ -4,7 +4,10 @@
 
     using Ganss.XSS;
 
-    public class ArticleViewModel
+    using MMA_News_BG.Data.Models;
+    using MMA_News_BG.Services.Mapping;
+
+    public class ArticleViewModel : IMapFrom<Article>
     {
         public int Id { get; set; }
 
