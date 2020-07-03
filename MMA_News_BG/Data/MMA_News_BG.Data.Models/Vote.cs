@@ -1,0 +1,20 @@
+﻿namespace MMA_News_BG.Data.Models
+{
+    using System.ComponentModel.DataAnnotations;
+
+    using MMA_News_BG.Data.Common.Models;
+
+    public class Vote : BaseModel<int>
+    {
+        public int ArticleId { get; set; }
+
+        public virtual Article Article { get; set; }
+
+        [Required]
+        public string UserId { get; set; }
+
+        public virtual ApplicationUser User { get; set; }
+
+        public VoteType Type { get; set; }
+    }
+}

@@ -6,8 +6,8 @@
 <h1 class="display-3">@Model.Title</h1>
 @foreach (var article in Model.ArticlePosts)
 {
-    <div class="media-body">
-        <h4 class="media-heading"><a asp-controller="Posts" asp-action="ById" asp-route-id="@article.Id">@article.Title</a></h4>
+    <div class="media-body w-75 my-3 mx-auto">
+        <h4 class="media-heading"><a asp-controller="Articles" asp-action="ById" asp-route-id="@article.Id">@article.Title</a></h4>
         <p>@article.ShortContent</p>
         <ul class="list-inline list-unstyled text-right">
             <li class="list-inline-item">
